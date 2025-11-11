@@ -12,6 +12,9 @@ export default {
         accent:  "#10b981",   // emerald-500
         border:  "#e5e7eb",   // gray-200 for subtle lines
       },
+      gridTemplateColumns:{
+        'auto': 'repeat(auto-fill, minmax(200px, 1fr))'
+      }
     },
   },
   plugins: [],
