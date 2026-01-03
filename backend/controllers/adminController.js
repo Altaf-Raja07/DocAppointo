@@ -10,14 +10,14 @@ import jwt from 'jsonwebtoken'
 const addDoctor = async (req,res) => {
 
     try {
-        // Debug logging
-        console.log('=== Request Debug ===')
-        console.log('req.body:', req.body)
-        console.log('req.file:', req.file)
-        console.log('Content-Type:', req.headers['content-type'])
-        
         const { name, email, password, speciality, degree, experience, about, fees, address } = req.body
         const imageFile = req.file
+        console.log(" incoming image", imageFile)
+        
+        // Log for debugging
+        if (!imageFile) {
+            console.log('⚠️  No file received. Check Thunder Client/Postman file upload setup.')
+        }
 
        // checking for all data to add doctor 
        if(!name || !email || !password || !speciality || !degree || !experience || !about || !fees || !address){
