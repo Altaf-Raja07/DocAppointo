@@ -5,7 +5,6 @@ import { useContext } from "react";
 import { AdminContext } from "../../context/AdminContext";
 import { toast } from "react-toastify"
 import axios from "axios";
-import { set } from "mongoose";
 
 const AddDoctor = () => {
 

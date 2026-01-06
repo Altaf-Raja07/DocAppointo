@@ -10,7 +10,7 @@ const Sidebar = () => {
 
 
     return (
-        <div className="min-h-screen bg-white border-r">
+        <div className="min-h-screen bg-white">
             {
                 aToken && <ul className="text-[#515151] mt-5">
 
