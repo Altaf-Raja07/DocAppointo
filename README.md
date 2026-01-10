@@ -3,7 +3,6 @@
 > A modern, full-stack healthcare appointment management platform built with the MERN stack, enabling seamless doctor-patient interactions and efficient appointment scheduling.
 
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://docappointo.vercel.app/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## 🔗 Live Demo
 
