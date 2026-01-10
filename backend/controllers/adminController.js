@@ -14,9 +14,7 @@ const addDoctor = async (req,res) => {
     try {
         const { name, email, password, speciality, degree, experience, about, fees, address } = req.body
         const imageFile = req.file
-        console.log(" incoming image", imageFile)
         
-        // Log for debugging
         if (!imageFile) {
             console.log('⚠️  No file received. Check Thunder Client/Postman file upload setup.')
         }
@@ -50,7 +48,6 @@ const addDoctor = async (req,res) => {
                    secure: true
                })
                imageUrl = imageUpload.secure_url
-               console.log('✅ Image uploaded to Cloudinary:', imageUrl)
            } catch (uploadError) {
                console.log('❌ Cloudinary upload error:', uploadError.message)
                return res.json({success:false, message: `Image upload failed: ${uploadError.message}`})
@@ -58,7 +55,6 @@ const addDoctor = async (req,res) => {
        } else {
            // Temporary: Use placeholder if no file uploaded
            imageUrl = 'https://via.placeholder.com/150'
-           console.log('⚠️ No image file received - using placeholder')
        }
        
        // Parse address properly
