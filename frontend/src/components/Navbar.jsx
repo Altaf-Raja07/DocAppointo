@@ -37,7 +37,7 @@ const Navbar = () => {
                     <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden"/>
                 </NavLink>
                 <li>
-                    <a href="http://localhost:5174" target="_blank" rel="noopener noreferrer" className="bg-white border border-primary text-primary px-6 py-2 rounded-full font-medium hover:bg-primary hover:text-white transition-all inline-block">Admin Panel</a>
+                    <a href="https://doc-appointo.vercel.app/" target="_blank" rel="noopener noreferrer" className="bg-white border border-primary text-primary px-6 py-2 rounded-full font-medium hover:bg-primary hover:text-white transition-all inline-block">Admin Panel</a>
                 </li>
             </ul>
             <div className="flex item-center gap-4">
