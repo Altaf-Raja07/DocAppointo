@@ -9,7 +9,7 @@ const Footer = () => {
                 {/* ----------- Left Section ----------- */}
                 <div>
                     <img className="mb-5 w-40 sm:w-48 md:w-56 lg:w-64 xl:w-72 object-contain mx-auto md:mx-0" src={assets.logo} alt="" />
-                    <p className="w-full  md:w-2/3 text-gray-600 leading-6">DocAppointo helps you find and book appointments with trusted doctors in just a few clicks. Browse through verified specialists, view their profiles, and schedule visits at your convenience. Our goal is to make healthcare access simple, fast, and reliable for everyone — anytime, anywhere.</p>
+                    <p className="w-full  md:w-2/3 text-gray-600 leading-6">Prescripto helps you find and book appointments with trusted doctors in just a few clicks. Browse through verified specialists, view their profiles, and schedule visits at your convenience. Our goal is to make healthcare access simple, fast, and reliable for everyone — anytime, anywhere.</p>
                 </div>
                 {/* ----------- Center Section ----------- */}
                 <div>
