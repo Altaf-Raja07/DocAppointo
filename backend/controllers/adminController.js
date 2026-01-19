@@ -38,7 +38,7 @@ const addDoctor = async (req,res) => {
        const salt = await bcrypt.genSalt(10)
        const hashedPassword = await bcrypt.hash(password, salt)
 
-       let imageUrl = ''
+       let imageUrl = 'https://via.placeholder.com/150'
        
        // upload image to cloudinary (if file is provided)
        if(imageFile){
@@ -69,7 +69,7 @@ const addDoctor = async (req,res) => {
        const doctorData = {
         name,
         email,
-        image:imageUrl,
+        Image:imageUrl,
         password:hashedPassword,
         speciality,
         degree,
